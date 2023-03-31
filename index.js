@@ -8,7 +8,7 @@ findMatching = (driversArray, driversString) => {
 return matchedDrivers
 }
 
-fuzzyMatch = (driversArray, driversString) => {
+function fuzzyMatch (driversArray, driversString) {
   const matchedDrivers = driversArray.filter(drivers => {
     if (drivers.startsWith(driversString)){
       return true
@@ -18,7 +18,7 @@ fuzzyMatch = (driversArray, driversString) => {
 return matchedDrivers 
 }
 
-matchName = (driversArray, driversName) => {
+function matchName (driversArray, driversName) {
   const matchedDrivers = driversArray.filter(drivers => {
     if (driversName === drivers.name) {
       return true
